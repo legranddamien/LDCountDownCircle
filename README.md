@@ -9,7 +9,7 @@ To run the example project; clone the repo, and run `pod install` from the Examp
 
 ## Requirements
 
-## Installation
+## Installation (will be availabel on cocoapod)
 
 LDCountDownCircle is available through [CocoaPods](http://cocoapods.org), to install
 it simply add the following line to your Podfile:
@@ -18,7 +18,7 @@ it simply add the following line to your Podfile:
 
 ## Author
 
-Damien Legrand, legrand.damien.06@gmail.com
+Damien Legrand @damien_legrand
 
 ## License
 

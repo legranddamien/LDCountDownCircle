@@ -8,24 +8,158 @@
 
 #import "LDCountDownCircle.h"
 
+#define LD_ADJUSTMENT 1000
+#define LD_TIMER .01
+
+@interface LDCountDownCircle () {
+    NSUInteger numAdjustedSecondsCompleted;
+    NSUInteger numAdjustedSecondsCompletedIncrementor;
+    NSUInteger numAdjustedSecondsTotal;
+    NSUInteger numSeconds;
+}
+
+@end
+
 @implementation LDCountDownCircle
 
-- (id)initWithFrame:(CGRect)frame
+#pragma mark - Init
+
+- (instancetype)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];
-    if (self) {
-        // Initialization code
+    if (self)
+    {
+        [self initialization];
     }
     return self;
 }
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
+- (instancetype)initWithCoder:(NSCoder *)coder
+{
+    self = [super initWithCoder:coder];
+    if (self)
+    {
+        [self initialization];
+    }
+    return self;
+}
+
+- (void)initialization
+{
+    _strokeWidth = 1.0;
+}
+
+#pragma mark - View
+
+
 - (void)drawRect:(CGRect)rect
 {
-    // Drawing code
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    float radius = CGRectGetWidth(rect)/2.0f - _strokeWidth/2.0f;
+    float angleOffset = M_PI_2;
+    
+    // Draw the remaining amount of timer circle.
+    CGContextSetLineWidth(context, _strokeWidth);
+    CGContextBeginPath(context);
+    CGFloat startAngle = (((CGFloat)numAdjustedSecondsCompleted + 1.0f) /
+                          ((CGFloat)numAdjustedSecondsTotal)*M_PI*2 - angleOffset);
+    CGFloat endAngle = 2*M_PI - angleOffset;
+    CGContextAddArc(context,
+                    CGRectGetMidX(rect), CGRectGetMidY(rect),
+                    radius,
+                    startAngle,
+                    endAngle,
+                    0);
+    CGContextSetStrokeColorWithColor(context, self.tintColor.CGColor);
+    CGContextStrokePath(context);
 }
-*/
+
+
+#pragma mark - Public Methods
+
+- (void)startWithDuration:(NSTimeInterval)duration startAt:(NSTimeInterval)start
+{
+    if (duration < 1)
+    {
+        return;
+    }
+    
+    if(start >= duration)
+    {
+        start = 0;
+    }
+    
+    if (self.didStart && !self.didFinish) {
+        return;
+    }
+    
+    numSeconds = duration;
+    numAdjustedSecondsCompleted = start * LD_ADJUSTMENT;
+    numAdjustedSecondsCompletedIncrementor = duration;
+    numAdjustedSecondsTotal = duration * LD_ADJUSTMENT;
+    
+    _didStart = YES;
+    _didFinish = NO;
+    [self resume];
+}
+
+- (void)stopCountDown
+{
+    [self stop];
+    _didFinish = YES;
+    _didStart = NO;
+    [self setNeedsDisplay];
+}
+
+#pragma mark - Private Methods
+
+- (void)stop
+{
+    _isRunning = NO;
+    numAdjustedSecondsCompleted = 0;
+}
+
+- (void)resume
+{
+    if (!self.didStart || self.isRunning)
+    {
+        return;
+    }
+    
+    _isRunning = YES;
+    [self update];
+}
+
+- (void)update
+{
+    if (self.isRunning)
+    {
+        numAdjustedSecondsCompleted += numAdjustedSecondsTotal / (numSeconds / LD_TIMER);
+        if (numAdjustedSecondsCompleted >= numAdjustedSecondsTotal)
+        {
+            // finished
+            numAdjustedSecondsCompleted = numAdjustedSecondsTotal - 1;
+            [self stop];
+            _didFinish = YES;
+            
+            // alert delegate method that it finished
+            if ([self.delegate respondsToSelector:@selector(countDownDidFinish:)])
+            {
+                [self.delegate countDownDidFinish:self];
+            }
+        }
+        else
+        {
+            // in progress
+            [NSTimer scheduledTimerWithTimeInterval:LD_TIMER
+                                             target:self
+                                           selector:@selector(update)
+                                           userInfo:nil
+                                            repeats:NO];
+        }
+        
+        [self setNeedsDisplay];
+    }
+}
 
 @end

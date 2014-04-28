@@ -21,6 +21,7 @@
 		A4360FDB190E43C800D3C536 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4360FBD190E43C800D3C536 /* UIKit.framework */; };
 		A4360FE3190E43C800D3C536 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A4360FE1190E43C800D3C536 /* InfoPlist.strings */; };
 		A4360FE5190E43C800D3C536 /* LDCountDownCircleExempleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A4360FE4190E43C800D3C536 /* LDCountDownCircleExempleTests.m */; };
+		A4360FF1190E453400D3C536 /* LDCountDownCircle.m in Sources */ = {isa = PBXBuildFile; fileRef = A4360FF0190E453400D3C536 /* LDCountDownCircle.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		A4360FE0190E43C800D3C536 /* LDCountDownCircleExempleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LDCountDownCircleExempleTests-Info.plist"; sourceTree = "<group>"; };
 		A4360FE2190E43C800D3C536 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A4360FE4190E43C800D3C536 /* LDCountDownCircleExempleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LDCountDownCircleExempleTests.m; sourceTree = "<group>"; };
+		A4360FEF190E453400D3C536 /* LDCountDownCircle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LDCountDownCircle.h; path = ../../../Classes/ios/LDCountDownCircle.h; sourceTree = "<group>"; };
+		A4360FF0190E453400D3C536 /* LDCountDownCircle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LDCountDownCircle.m; path = ../../../Classes/ios/LDCountDownCircle.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +115,7 @@
 		A4360FBF190E43C800D3C536 /* LDCountDownCircleExemple */ = {
 			isa = PBXGroup;
 			children = (
+				A4360FEE190E451400D3C536 /* Classes */,
 				A4360FC8190E43C800D3C536 /* LDAppDelegate.h */,
 				A4360FC9190E43C800D3C536 /* LDAppDelegate.m */,
 				A4360FCB190E43C800D3C536 /* Main.storyboard */,
@@ -150,6 +154,15 @@
 				A4360FE1190E43C800D3C536 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A4360FEE190E451400D3C536 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				A4360FEF190E453400D3C536 /* LDCountDownCircle.h */,
+				A4360FF0190E453400D3C536 /* LDCountDownCircle.m */,
+			);
+			name = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -251,6 +264,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A4360FCA190E43C800D3C536 /* LDAppDelegate.m in Sources */,
+				A4360FF1190E453400D3C536 /* LDCountDownCircle.m in Sources */,
 				A4360FC6190E43C800D3C536 /* main.m in Sources */,
 				A4360FD0190E43C800D3C536 /* LDViewController.m in Sources */,
 			);

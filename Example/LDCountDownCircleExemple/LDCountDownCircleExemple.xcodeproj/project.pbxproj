@@ -1,0 +1,472 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A4360FBA190E43C800D3C536 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4360FB9190E43C800D3C536 /* Foundation.framework */; };
+		A4360FBC190E43C800D3C536 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4360FBB190E43C800D3C536 /* CoreGraphics.framework */; };
+		A4360FBE190E43C800D3C536 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4360FBD190E43C800D3C536 /* UIKit.framework */; };
+		A4360FC4190E43C800D3C536 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A4360FC2190E43C800D3C536 /* InfoPlist.strings */; };
+		A4360FC6190E43C800D3C536 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A4360FC5190E43C800D3C536 /* main.m */; };
+		A4360FCA190E43C800D3C536 /* LDAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A4360FC9190E43C800D3C536 /* LDAppDelegate.m */; };
+		A4360FCD190E43C800D3C536 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4360FCB190E43C800D3C536 /* Main.storyboard */; };
+		A4360FD0190E43C800D3C536 /* LDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4360FCF190E43C800D3C536 /* LDViewController.m */; };
+		A4360FD2190E43C800D3C536 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4360FD1190E43C800D3C536 /* Images.xcassets */; };
+		A4360FD9190E43C800D3C536 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4360FD8190E43C800D3C536 /* XCTest.framework */; };
+		A4360FDA190E43C800D3C536 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4360FB9190E43C800D3C536 /* Foundation.framework */; };
+		A4360FDB190E43C800D3C536 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4360FBD190E43C800D3C536 /* UIKit.framework */; };
+		A4360FE3190E43C800D3C536 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A4360FE1190E43C800D3C536 /* InfoPlist.strings */; };
+		A4360FE5190E43C800D3C536 /* LDCountDownCircleExempleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A4360FE4190E43C800D3C536 /* LDCountDownCircleExempleTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A4360FDC190E43C800D3C536 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A4360FAE190E43C800D3C536 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A4360FB5190E43C800D3C536;
+			remoteInfo = LDCountDownCircleExemple;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A4360FB6190E43C800D3C536 /* LDCountDownCircleExemple.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LDCountDownCircleExemple.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4360FB9190E43C800D3C536 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A4360FBB190E43C800D3C536 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A4360FBD190E43C800D3C536 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A4360FC1190E43C800D3C536 /* LDCountDownCircleExemple-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LDCountDownCircleExemple-Info.plist"; sourceTree = "<group>"; };
+		A4360FC3190E43C800D3C536 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A4360FC5190E43C800D3C536 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A4360FC7190E43C800D3C536 /* LDCountDownCircleExemple-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LDCountDownCircleExemple-Prefix.pch"; sourceTree = "<group>"; };
+		A4360FC8190E43C800D3C536 /* LDAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LDAppDelegate.h; sourceTree = "<group>"; };
+		A4360FC9190E43C800D3C536 /* LDAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LDAppDelegate.m; sourceTree = "<group>"; };
+		A4360FCC190E43C800D3C536 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A4360FCE190E43C800D3C536 /* LDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LDViewController.h; sourceTree = "<group>"; };
+		A4360FCF190E43C800D3C536 /* LDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LDViewController.m; sourceTree = "<group>"; };
+		A4360FD1190E43C800D3C536 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A4360FD7190E43C800D3C536 /* LDCountDownCircleExempleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LDCountDownCircleExempleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4360FD8190E43C800D3C536 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		A4360FE0190E43C800D3C536 /* LDCountDownCircleExempleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LDCountDownCircleExempleTests-Info.plist"; sourceTree = "<group>"; };
+		A4360FE2190E43C800D3C536 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A4360FE4190E43C800D3C536 /* LDCountDownCircleExempleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LDCountDownCircleExempleTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A4360FB3190E43C800D3C536 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4360FBC190E43C800D3C536 /* CoreGraphics.framework in Frameworks */,
+				A4360FBE190E43C800D3C536 /* UIKit.framework in Frameworks */,
+				A4360FBA190E43C800D3C536 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4360FD4190E43C800D3C536 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4360FD9190E43C800D3C536 /* XCTest.framework in Frameworks */,
+				A4360FDB190E43C800D3C536 /* UIKit.framework in Frameworks */,
+				A4360FDA190E43C800D3C536 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A4360FAD190E43C800D3C536 = {
+			isa = PBXGroup;
+			children = (
+				A4360FBF190E43C800D3C536 /* LDCountDownCircleExemple */,
+				A4360FDE190E43C800D3C536 /* LDCountDownCircleExempleTests */,
+				A4360FB8190E43C800D3C536 /* Frameworks */,
+				A4360FB7190E43C800D3C536 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A4360FB7190E43C800D3C536 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A4360FB6190E43C800D3C536 /* LDCountDownCircleExemple.app */,
+				A4360FD7190E43C800D3C536 /* LDCountDownCircleExempleTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A4360FB8190E43C800D3C536 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A4360FB9190E43C800D3C536 /* Foundation.framework */,
+				A4360FBB190E43C800D3C536 /* CoreGraphics.framework */,
+				A4360FBD190E43C800D3C536 /* UIKit.framework */,
+				A4360FD8190E43C800D3C536 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A4360FBF190E43C800D3C536 /* LDCountDownCircleExemple */ = {
+			isa = PBXGroup;
+			children = (
+				A4360FC8190E43C800D3C536 /* LDAppDelegate.h */,
+				A4360FC9190E43C800D3C536 /* LDAppDelegate.m */,
+				A4360FCB190E43C800D3C536 /* Main.storyboard */,
+				A4360FCE190E43C800D3C536 /* LDViewController.h */,
+				A4360FCF190E43C800D3C536 /* LDViewController.m */,
+				A4360FD1190E43C800D3C536 /* Images.xcassets */,
+				A4360FC0190E43C800D3C536 /* Supporting Files */,
+			);
+			path = LDCountDownCircleExemple;
+			sourceTree = "<group>";
+		};
+		A4360FC0190E43C800D3C536 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A4360FC1190E43C800D3C536 /* LDCountDownCircleExemple-Info.plist */,
+				A4360FC2190E43C800D3C536 /* InfoPlist.strings */,
+				A4360FC5190E43C800D3C536 /* main.m */,
+				A4360FC7190E43C800D3C536 /* LDCountDownCircleExemple-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A4360FDE190E43C800D3C536 /* LDCountDownCircleExempleTests */ = {
+			isa = PBXGroup;
+			children = (
+				A4360FE4190E43C800D3C536 /* LDCountDownCircleExempleTests.m */,
+				A4360FDF190E43C800D3C536 /* Supporting Files */,
+			);
+			path = LDCountDownCircleExempleTests;
+			sourceTree = "<group>";
+		};
+		A4360FDF190E43C800D3C536 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A4360FE0190E43C800D3C536 /* LDCountDownCircleExempleTests-Info.plist */,
+				A4360FE1190E43C800D3C536 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A4360FB5190E43C800D3C536 /* LDCountDownCircleExemple */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A4360FE8190E43C800D3C536 /* Build configuration list for PBXNativeTarget "LDCountDownCircleExemple" */;
+			buildPhases = (
+				A4360FB2190E43C800D3C536 /* Sources */,
+				A4360FB3190E43C800D3C536 /* Frameworks */,
+				A4360FB4190E43C800D3C536 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LDCountDownCircleExemple;
+			productName = LDCountDownCircleExemple;
+			productReference = A4360FB6190E43C800D3C536 /* LDCountDownCircleExemple.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A4360FD6190E43C800D3C536 /* LDCountDownCircleExempleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A4360FEB190E43C800D3C536 /* Build configuration list for PBXNativeTarget "LDCountDownCircleExempleTests" */;
+			buildPhases = (
+				A4360FD3190E43C800D3C536 /* Sources */,
+				A4360FD4190E43C800D3C536 /* Frameworks */,
+				A4360FD5190E43C800D3C536 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A4360FDD190E43C800D3C536 /* PBXTargetDependency */,
+			);
+			name = LDCountDownCircleExempleTests;
+			productName = LDCountDownCircleExempleTests;
+			productReference = A4360FD7190E43C800D3C536 /* LDCountDownCircleExempleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A4360FAE190E43C800D3C536 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = LD;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Damien Legrand";
+				TargetAttributes = {
+					A4360FD6190E43C800D3C536 = {
+						TestTargetID = A4360FB5190E43C800D3C536;
+					};
+				};
+			};
+			buildConfigurationList = A4360FB1190E43C800D3C536 /* Build configuration list for PBXProject "LDCountDownCircleExemple" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A4360FAD190E43C800D3C536;
+			productRefGroup = A4360FB7190E43C800D3C536 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A4360FB5190E43C800D3C536 /* LDCountDownCircleExemple */,
+				A4360FD6190E43C800D3C536 /* LDCountDownCircleExempleTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A4360FB4190E43C800D3C536 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4360FD2190E43C800D3C536 /* Images.xcassets in Resources */,
+				A4360FC4190E43C800D3C536 /* InfoPlist.strings in Resources */,
+				A4360FCD190E43C800D3C536 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4360FD5190E43C800D3C536 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4360FE3190E43C800D3C536 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A4360FB2190E43C800D3C536 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4360FCA190E43C800D3C536 /* LDAppDelegate.m in Sources */,
+				A4360FC6190E43C800D3C536 /* main.m in Sources */,
+				A4360FD0190E43C800D3C536 /* LDViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4360FD3190E43C800D3C536 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4360FE5190E43C800D3C536 /* LDCountDownCircleExempleTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A4360FDD190E43C800D3C536 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A4360FB5190E43C800D3C536 /* LDCountDownCircleExemple */;
+			targetProxy = A4360FDC190E43C800D3C536 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A4360FC2190E43C800D3C536 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A4360FC3190E43C800D3C536 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		A4360FCB190E43C800D3C536 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A4360FCC190E43C800D3C536 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A4360FE1190E43C800D3C536 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A4360FE2190E43C800D3C536 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A4360FE6190E43C800D3C536 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A4360FE7190E43C800D3C536 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A4360FE9190E43C800D3C536 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LDCountDownCircleExemple/LDCountDownCircleExemple-Prefix.pch";
+				INFOPLIST_FILE = "LDCountDownCircleExemple/LDCountDownCircleExemple-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		A4360FEA190E43C800D3C536 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LDCountDownCircleExemple/LDCountDownCircleExemple-Prefix.pch";
+				INFOPLIST_FILE = "LDCountDownCircleExemple/LDCountDownCircleExemple-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		A4360FEC190E43C800D3C536 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/LDCountDownCircleExemple.app/LDCountDownCircleExemple";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LDCountDownCircleExemple/LDCountDownCircleExemple-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "LDCountDownCircleExempleTests/LDCountDownCircleExempleTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		A4360FED190E43C800D3C536 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/LDCountDownCircleExemple.app/LDCountDownCircleExemple";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LDCountDownCircleExemple/LDCountDownCircleExemple-Prefix.pch";
+				INFOPLIST_FILE = "LDCountDownCircleExempleTests/LDCountDownCircleExempleTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A4360FB1190E43C800D3C536 /* Build configuration list for PBXProject "LDCountDownCircleExemple" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A4360FE6190E43C800D3C536 /* Debug */,
+				A4360FE7190E43C800D3C536 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A4360FE8190E43C800D3C536 /* Build configuration list for PBXNativeTarget "LDCountDownCircleExemple" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A4360FE9190E43C800D3C536 /* Debug */,
+				A4360FEA190E43C800D3C536 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A4360FEB190E43C800D3C536 /* Build configuration list for PBXNativeTarget "LDCountDownCircleExempleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A4360FEC190E43C800D3C536 /* Debug */,
+				A4360FED190E43C800D3C536 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A4360FAE190E43C800D3C536 /* Project object */;
+}

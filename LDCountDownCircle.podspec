@@ -6,7 +6,7 @@
 #
 Pod::Spec.new do |s|
   s.name             = "LDCountDownCircle"
-  s.version          = "0.1.0"
+  s.version          = "0.1.1"
   s.summary          = "Circle animation to show a count down"
   s.license          = 'MIT'
   s.author           = { "Damien Legrand" => "legrand.damien.06@gmail.com" }
@@ -15,6 +15,5 @@ Pod::Spec.new do |s|
 
   s.platform     = :ios, '6.1'
   s.requires_arc = true
-
   s.source_files = 'Classes/ios’
 end

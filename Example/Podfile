@@ -1,0 +1,7 @@
+pod "LDCountDownCircle", :path => "../"
+
+target "Demo" do
+end
+
+target "DemoTests" do
+end

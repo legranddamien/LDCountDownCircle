@@ -22,6 +22,7 @@
 		A4360FE3190E43C800D3C536 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A4360FE1190E43C800D3C536 /* InfoPlist.strings */; };
 		A4360FE5190E43C800D3C536 /* LDCountDownCircleExempleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A4360FE4190E43C800D3C536 /* LDCountDownCircleExempleTests.m */; };
 		A4360FF1190E453400D3C536 /* LDCountDownCircle.m in Sources */ = {isa = PBXBuildFile; fileRef = A4360FF0190E453400D3C536 /* LDCountDownCircle.m */; };
+		A4749F9D190E5B1600FD2C6C /* LDTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A4749F9C190E5B1600FD2C6C /* LDTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,8 @@
 		A4360FE4190E43C800D3C536 /* LDCountDownCircleExempleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LDCountDownCircleExempleTests.m; sourceTree = "<group>"; };
 		A4360FEF190E453400D3C536 /* LDCountDownCircle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LDCountDownCircle.h; path = ../../../Classes/ios/LDCountDownCircle.h; sourceTree = "<group>"; };
 		A4360FF0190E453400D3C536 /* LDCountDownCircle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LDCountDownCircle.m; path = ../../../Classes/ios/LDCountDownCircle.m; sourceTree = "<group>"; };
+		A4749F9B190E5B1600FD2C6C /* LDTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDTableViewCell.h; sourceTree = "<group>"; };
+		A4749F9C190E5B1600FD2C6C /* LDTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +122,8 @@
 				A4360FC8190E43C800D3C536 /* LDAppDelegate.h */,
 				A4360FC9190E43C800D3C536 /* LDAppDelegate.m */,
 				A4360FCB190E43C800D3C536 /* Main.storyboard */,
+				A4749F9B190E5B1600FD2C6C /* LDTableViewCell.h */,
+				A4749F9C190E5B1600FD2C6C /* LDTableViewCell.m */,
 				A4360FCE190E43C800D3C536 /* LDViewController.h */,
 				A4360FCF190E43C800D3C536 /* LDViewController.m */,
 				A4360FD1190E43C800D3C536 /* Images.xcassets */,
@@ -264,6 +269,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A4360FCA190E43C800D3C536 /* LDAppDelegate.m in Sources */,
+				A4749F9D190E5B1600FD2C6C /* LDTableViewCell.m in Sources */,
 				A4360FF1190E453400D3C536 /* LDCountDownCircle.m in Sources */,
 				A4360FC6190E43C800D3C536 /* main.m in Sources */,
 				A4360FD0190E43C800D3C536 /* LDViewController.m in Sources */,
@@ -471,6 +477,7 @@
 				A4360FEA190E43C800D3C536 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A4360FEB190E43C800D3C536 /* Build configuration list for PBXNativeTarget "LDCountDownCircleExempleTests" */ = {
 			isa = XCConfigurationList;
@@ -479,6 +486,7 @@
 				A4360FED190E43C800D3C536 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

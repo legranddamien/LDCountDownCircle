@@ -1,5 +1,5 @@
 //
-//  LDViewController.h
+//  LDTableViewCell.h
 //  LDCountDownCircleExemple
 //
 //  Created by Damien Legrand on 28/04/2014.
@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "LDCountDownCircle.h"
 
-@interface LDViewController : UITableViewController
-
+@interface LDTableViewCell : UITableViewCell
+@property (weak, nonatomic) IBOutlet LDCountDownCircle *countDown;
 
 @end

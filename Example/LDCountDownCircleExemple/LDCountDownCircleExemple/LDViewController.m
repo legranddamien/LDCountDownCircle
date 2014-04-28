@@ -8,11 +8,9 @@
 
 #import "LDViewController.h"
 #import "LDCountDownCircle.h"
+#import "LDTableViewCell.h"
 
 @interface LDViewController ()
-@property (weak, nonatomic) IBOutlet LDCountDownCircle *smallCountDown;
-@property (weak, nonatomic) IBOutlet LDCountDownCircle *mediumCountDown;
-@property (weak, nonatomic) IBOutlet LDCountDownCircle *largeCountDown;
 @end
 
 @implementation LDViewController
@@ -21,8 +19,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-    _mediumCountDown.strokeWidth = 2.0;
-    _largeCountDown.strokeWidth = 5.0;
+    self.tableView.tintColor = [UIColor brownColor];
 }
 
 - (void)didReceiveMemoryWarning
@@ -31,21 +28,27 @@
     // Dispose of any resources that can be recreated.
 }
 
-#pragma mark - UIActions
 
-- (IBAction)start:(id)sender
+#pragma mark - TableView
+
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    [_smallCountDown startWithDuration:5.0 startAt:0.0];
-    [_mediumCountDown startWithDuration:5.0 startAt:2.0];
-    [_largeCountDown startWithDuration:5.0 startAt:3.0];
+    return 1;
 }
 
-- (IBAction)stop:(id)sender
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    [_smallCountDown stopCountDown];
-    [_mediumCountDown stopCountDown];
-    [_largeCountDown stopCountDown];
+    return 100;
 }
 
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    LDTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"CellIdentifier" forIndexPath:indexPath];
+    
+    [cell.countDown startWithDuration:5.0 startAt:0.0];
+    
+    return cell;
+}
 
 @end

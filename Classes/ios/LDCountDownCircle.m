@@ -61,9 +61,9 @@
     // Draw the remaining amount of timer circle.
     CGContextSetLineWidth(context, _strokeWidth);
     CGContextBeginPath(context);
-    CGFloat startAngle = (((CGFloat)numAdjustedSecondsCompleted + 1.0f) /
-                          ((CGFloat)numAdjustedSecondsTotal)*M_PI*2 - angleOffset);
-    CGFloat endAngle = 2*M_PI - angleOffset;
+    CGFloat startAngle = (_isRunning) ? (((CGFloat)numAdjustedSecondsCompleted + 1.0f) /
+                                         ((CGFloat)numAdjustedSecondsTotal)*M_PI*2 - angleOffset) : 0.0;
+    CGFloat endAngle = (_isRunning) ? 2*M_PI - angleOffset : 2*M_PI;
     CGContextAddArc(context,
                     CGRectGetMidX(rect), CGRectGetMidY(rect),
                     radius,

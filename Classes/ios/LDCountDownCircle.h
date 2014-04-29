@@ -54,6 +54,11 @@
 @property (nonatomic, assign) CGFloat strokeWidth;
 
 /**
+ *  This color is used instead of tintColor when not on iOS7
+ */
+@property (nonatomic, strong) UIColor *countDownColor;
+
+/**
  *  This method will start the count down
  *
  *  @param duration the total duration of the count down

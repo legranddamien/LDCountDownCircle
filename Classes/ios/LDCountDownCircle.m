@@ -47,6 +47,7 @@
 - (void)initialization
 {
     _strokeWidth = 1.0;
+    _countDownColor = [UIColor blackColor];
 }
 
 #pragma mark - View
@@ -70,7 +71,14 @@
                     startAngle,
                     endAngle,
                     0);
-    CGContextSetStrokeColorWithColor(context, self.tintColor.CGColor);
+    
+    UIColor *color = _countDownColor;
+    if([self respondsToSelector:@selector(tintColor)])
+    {
+        color = [self tintColor];
+    }
+    
+    CGContextSetStrokeColorWithColor(context, color.CGColor);
     CGContextStrokePath(context);
 }
 
@@ -109,6 +117,15 @@
     _didFinish = YES;
     _didStart = NO;
     [self setNeedsDisplay];
+}
+
+- (void)setCountDownColor:(UIColor *)countDownColor
+{
+    _countDownColor = countDownColor;
+    if(![self respondsToSelector:@selector(tintColor)])
+    {
+        [self setNeedsDisplay];
+    }
 }
 
 #pragma mark - Private Methods
